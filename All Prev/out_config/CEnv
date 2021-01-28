@@ -1,0 +1,62 @@
+Keybindings-
+// Place your key bindings in this file to override the defaultsauto[]
+[{
+    "key": "ctrl+f9",
+    "command": "workbench.action.tasks.test",
+    "when": "editorTextFocus"
+},{
+    "key": "alt+f9",
+    "command": "workbench.action.tasks.build",
+    "when": "editorTextFocus"
+},
+    {
+        "key": "ctrl+shift+h",
+        "command": "editor.action.formatDocument",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorTextFocus && !editorReadonly"
+    }
+]
+============================================================================
+settings.json-
+{
+    "editor.fontFamily": "Roboto Mono,Poppins,Kaushan Script,Courgette,Kalam,Bodoni MT,Consolas, Arial,'Courier New', monospace",
+    "editor.fontLigatures": true
+}
+
+============================================================================
+tasks.json-
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile C File",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${workspaceRoot}\\${fileBasename}.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run C File",
+            "type": "shell",
+            "command": ".\\${fileBasename}.exe",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}

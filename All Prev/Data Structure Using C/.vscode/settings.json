@@ -1,0 +1,16 @@
+{
+    "editor.fontFamily": "Roboto Mono,Poppins,Kaushan Script,Courgette,Arial,Kalam,Bodoni MT,Consolas,'Courier New',monospace",
+    "editor.fontLigatures": true,
+    "files.associations": {
+        "5DIGITSU.C": "cpp",
+        "TRIANGLE.C": "cpp",
+        "conio.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "time.h": "c",
+        "DEC.C": "cpp",
+        "xlocale": "c",
+        "cmath": "c",
+        "cstdlib": "c"
+    }
+}
