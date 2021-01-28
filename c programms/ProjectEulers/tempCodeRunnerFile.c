@@ -1,3 +1,0 @@
-
-    printf("%lld", maxPrimeFactors(n)); 
-  
